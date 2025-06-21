@@ -4,9 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>テストWebアプリ</title>
+    <title>データ表示サイト_test</title>
   </head>
   <body>
-    <h1>index.html表示してます</h1>
+    <header>
+      <h1>データ表示サイト_test</h1>
+    </header>
+    <main>
+      <h2>円形ロボットシステムマニュアル</h2>
+      <a href="templates/activity.html">テストページへ</a>
+      <h2>日本ー日本間のテスト結果</h2>
+      <h3>位置追従テスト</h3>
+      <a href="templates/JP_JP/robot_pos.html">ロボットの位置</a><br />
+      <a href="templates/JP_JP/time_delay.html">通信遅延</a><br />
+      <a href="templates/JP_JP/pos_angle_err.html">マスターとコピーの位置差</a
+      ><br />
+      <a href="templates/JP_JP/time_delay_with_cycle_time.html"
+        >通信遅延とサイクルタイム</a
+      ><br />
+      <h2>日本ータイ間のテスト</h2>
+      <h3>位置追従テスト</h3>
+      <a href="templates/JP_TH/robot_pos.html">ロボットの位置</a><br />
+      <a href="templates/JP_TH/time_delay.html">通信遅延</a><br />
+      <a href="templates/JP_TH/pos_angle_err.html">マスターとコピーの位置差</a
+      ><br />
+      <a href="templates/JP_TH/time_delay_with_cycle_time.html"
+        >通信遅延とサイクルタイム</a
+      ><br />
+    </main>
   </body>
 </html>
+
+<script>
+  const password = prompt("パスワードを入力してください：");
+  if (password !== "9574") {
+    document.body.innerHTML = "アクセスが拒否されました";
+  }
+</script>
